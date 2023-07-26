@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&family=Roboto+Mono:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+  font-size: 1.1rem;
+  /* background-color: beige; */
+  scroll-behavior: smooth;
+}
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  display: flex;
+  background-color: darkblue;
+  color: white;
+  justify-content: space-between;
+  padding: 1.3rem 4rem;
+}
+
+
+.logo{
+  font-size: 1.5rem;
+}
+.anchorsContainer {
+  display: flex;
+  gap: 1.2rem;
+  margin-right: 1rem;
+}
+.anchor a {
+  color: white;
+  text-decoration: none;
+  
+}
+.anchor :hover{
+  cursor: pointer;
+  color: aliceblue;
+  text-decoration: underline;
+
+}
+
+
+
+/* ==================================================Hero Container============================= */
+.OverviewSection {
+  background-color: blueviolet;
+  min-height: 90vh;
+}
+
+.HeroContainer {
+  height: 90vh;
+  color: white;
+  background-image: url(images/hero_image.png);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.HeroContainerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8rem 3rem;
+}
+
+
+#Heading3 {
+  padding: 1.5rem;
+}
+
+/* ===========================================Music Container============================================ */
+/* .MusicSection{
+  position: relative;
+
+} */
+
+.MusicContainer {
+  background-color: #1b0058;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 120vh;
+  position: relative;
+  color: white;
+  padding: 4rem 0rem;
+  gap: 1rem;
+}
+
+.musicImageDivision {
+  /* position: absolute;
+  top: 60%; */
+  /* Scomd waiy */
+
+  position: relative;
+  top: 60%;
+}
+
+
+.inputButton {
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  transition: 0.5s ease-in;
+}
+.inputButton:hover {
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  background-color: rgb(143, 68, 68);
+  /* box-shadow: inset -2px -2px 3px 3px rgb(143, 68, 68); */
+}
+
+.informationSection {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  /* Second way to move this if i do this then downside section must be made relative and given gap frmo top  */
+  /* position: relative;
+  top:400px; */
+}
+.informationContainer {
+  /* First way to move is giving margin if i do this then no gap we have to give to downside section */
+  margin-top: 45 vw;
+  gap: 1rem;
+}
+
+.videoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 2rem;
+  min-height: 40rem;
+  margin: 1.5rem 0rem 3rem 0rem;
+  background-image: url(images/video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  
+}
+.divider{
+  border:1px solid grey;
+}
+.mainGiftContainer{
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width:800px) {
+  .mainGiftContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+}
+.giftTextContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.textFooterContainer{
+  background-color: #1b0058;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 3rem;
+  padding:2rem;
+
+}
+.textFooterContainer ul{
+  list-style: none;
+  line-height: 1.5rem;
+}
+.textFooterContainer h4{
+  margin-bottom: 1rem;
+  text-decoration:underline;
+
+}
+.copyrightContainer{
+  background-color: darkblue;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+
+/* paddin:0.6rem 1.8rem */
+
+@media screen and (max-width:700px) {
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+  }
+  
+}
+@media screen and (max-width:440px) {
+  .container{
+    padding: 0.6rem 1.8rem;
+    margin-top: 1rem;
+  
+  }
+  h1{
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width:370px) {
+  .container{
+    padding: 0.6rem 0.3rem;
+    margin-top: 1rem;
+  }
+  h1{
+    margin-top: 1rem;
+  }
+}
+/* 465 */
+@media screen and (max-width:506px) {
+  .HeroContainerText{
+    font-size: 1rem;
+    padding: 4rem 3rem;
+  }
+  body,html{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width:965px) {
+  
+  .musicImageDivision img{
+    max-width: 100%;
+  }
+  .macImageContainer img{
+    max-width: 100%;
+
+  }
+  
+}
+@media screen and (max-width:500px) {
+  
+  .musicImageDivision{
+    top:67%;
+    
+  }
+}
+@media screen and (max-width:490px) {
+  .mainGiftContainer img{
+    max-width: 100%;
+
+  }
+  
+}
